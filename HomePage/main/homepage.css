@@ -12,14 +12,16 @@
     --text-color: #fff;
     --main-color: #3195ac;
 
-    --big-font: 7rem;
-    --p-font: 1.1rem;
+    --big-font: 5rem; 
+    --p-font: 1.5rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Newsreader:ital,opsz,wght@1,6..72,800&display=swap');
 
 
 body{
+    margin: 0;
+    padding: 0;
     background-color: #fff;
     color: black;
     overflow-x: hidden;
@@ -364,7 +366,7 @@ section{
         display: flex;
         flex-direction: column;
         background-color: #3195ac;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     .navbar a{
         display: block;
@@ -382,7 +384,8 @@ section{
 @media (max-width: 500px){
     :root{
         --big-font: rrem;
-        --p-font: 15px;
+        --p-font: 3px;
+        --p-font: 1rem;
         transition: .2s;
     }
     .btn{
