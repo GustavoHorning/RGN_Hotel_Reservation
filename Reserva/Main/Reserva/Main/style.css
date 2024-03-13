@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 15%;
+  background: transparent;
+  transition: all ease 0.45s;
+  background-color: #3195ac;
+}
+
+.logo {
+  color: var(--big-color);
+  font-size: 41px;
+  font-weight: 600px;
+}
+
+.logo span {
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  font-size: var(--p-font);
+  font-weight: 500;
+  color: var(--big-color);
+  margin: 0 25px;
+  transition: all ease 0.5s;
+}
+
+.navbar a:hover {
+  color: var(--text-color);
+}
+
+.navbar a.active {
+  color: var(--text-color);
+}
+
+.menu-btn {
+  background: linear-gradient(130.08deg, #3195ac 0%, #3195ac 100%);
+  box-shadow: 0px 20px 40px #00000070;
+  border: 1px solid #3b3b3b;
+  padding: 10px 20px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#menu-icon {
+  font-size: 28px;
+  margin-left: 10px;
+  z-index: 6;
+}
+
+:root {
+  --bg-color: #1f1f21;
+  --text-color: #fff;
+  --main-color: #3195ac;
+
+  --big-font: 7rem;
+  --p-font: 1.1rem;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: black;
+  overflow-x: hidden;
+  padding-top: 130px;
+}
+
+.container {
+  background-color: #fafafa;
+  border-radius: 14px;
+  margin: 14px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.reservation {
+  background: linear-gradient(120deg, #3195ac 0%, #8bb0ff 100%);
+  padding: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.form {
+  padding: 38px;
+}
+
+.form-content {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.form-content label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.form-content input {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  border-radius: 2px solid #dfdfdf;
+}
+
+.form-content a {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-content button {
+  background-color: #00c3ff;
+  color: #fff;
+}
+
+.dates {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 18px;
+}
+.date-input {
+  width: 80%;
+  padding: 0;
+}
+
+#checkout {
+  margin-left: 5px;
+}
+
+.people {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.people-input {
+  width: 80%;
+  padding: 0;
+}
+
+#children {
+  margin-left: 5px;
+}
+
+.form-content button {
+  background-color: #00c3ff;
+  color: #fff;
+  width: 100%;
+  border-radius: 14px;
+  padding: 10px;
+  border: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-content.error input {
+  border-color: #ff3b25;
+}
+
+.form-content.error a {
+  color: #ff3b25;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    overflow-x: hidden;
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    overflow-x: hidden;
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1299px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    overflow-x: hidden;
+    padding-top: 150px;
+  }
+}
+
+.rodape {
+  background-color: var(--bg-color);
+  color: white;
+  height: auto;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+.rodape a {
+  text-decoration: none;
+  color: white;
+}
+.rodape p {
+  margin-bottom: 5px;
+}
+.rodape-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  align-items: stretch;
+  padding: 60px 10px 40px 10px;
+}
+.rodape-div-1,
+.rodape-div-2,
+.rodape-div-3,
+.rodape-div-4 {
+  display: flex;
+  width: calc(100% / 4 - 20px);
+  padding: 10px;
+}
+.rodape span {
+  font-size: 20px;
+  color: white;
+}
+.rodape-direitos {
+  width: calc(100% - 20px);
+  background-color: black;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .rodape-div-1,
+  .rodape-div-2,
+  .rodape-div-3,
+  .rodape-div-4 {
+    width: calc(50% - 20px);
+    padding: 10px;
+  }
+  .rodape-div {
+    padding: 60px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 1850px) {
+  header {
+    padding: 15px 8%;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 1370px) {
+  header {
+    padding: 15px 4%;
+    transition: 0.2s;
+  }
+  section {
+    padding: 0 4%;
+    transition: 0.2s;
+  }
+  :root {
+    --big-font: 5.5rem;
+    --p-font: 1rem;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 1020px) {
+  .navbar a {
+    margin: 0 15px;
+  }
+  :root {
+    --big-font: 5rem;
+    --p-font: 1rem;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 950px) {
+  header {
+    padding: 11px 4%;
+    background: #3195ac;
+  }
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #3195ac;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar a {
+    display: block;
+    color: #3195ac;
+    padding: 0px;
+    margin: 0px 0px 40px 0px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .navbar.open {
+    left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --big-font: rrem;
+    --p-font: 3px;
+    --p-font: 1rem;
+    transition: 0.2s;
+  }
+  .btn {
+    padding: 9px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rodape-div-1,
+  .rodape-div-2,
+  .rodape-div-3,
+  .rodape-div-4 {
+    width: calc(50% - 20px);
+    padding: 10px;
+  }
+  .rodape-div {
+    padding: 60px 0px 40px 0px;
+  }
+}
+
+.form-content.date-input .error-message {
+  margin-top: 4px;
+  display: inline-block; /* Adicionando display inline-block */
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  font-size: 14px;
+}
